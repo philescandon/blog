@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Nbdev Setup 2 | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Nbdev Setup 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Second setup try for Nbdev" />
+<meta property="og:description" content="Second setup try for Nbdev" />
+<link rel="canonical" href="https://philescandon.github.io/blog/jupyter/2020/12/29/_12_30Nbdev_Setup.html" />
+<meta property="og:url" content="https://philescandon.github.io/blog/jupyter/2020/12/29/_12_30Nbdev_Setup.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:image" content="https://philescandon.github.io/blog/images/chart-preview.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-12-29T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"Second setup try for Nbdev","url":"https://philescandon.github.io/blog/jupyter/2020/12/29/_12_30Nbdev_Setup.html","@type":"BlogPosting","headline":"Nbdev Setup 2","dateModified":"2020-12-29T00:00:00-06:00","datePublished":"2020-12-29T00:00:00-06:00","image":"https://philescandon.github.io/blog/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://philescandon.github.io/blog/jupyter/2020/12/29/_12_30Nbdev_Setup.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://philescandon.github.io/blog/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Nbdev Setup 2</h1><p class="page-description">Second setup try for Nbdev</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-12-29T00:00:00-06:00" itemprop="datePublished">
+        Dec 29, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/philescandon/blog/tree/master/_notebooks/2020_12_30Nbdev_Setup.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/philescandon/blog/master?filepath=_notebooks%2F2020_12_30Nbdev_Setup.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/philescandon/blog/blob/master/_notebooks/2020_12_30Nbdev_Setup.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Interest">Interest </a></li>
+<li class="toc-entry toc-h2"><a href="#What-I-did">What I did </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020_12_30Nbdev_Setup.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://colab.research.google.com/github/philescandon/blog/blob/master/_notebooks/2020_12_30Nbdev_Setup.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Interest">
+<a class="anchor" href="#Interest" aria-hidden="true"><span class="octicon octicon-link"></span></a>Interest<a class="anchor-link" href="#Interest"> </a>
+</h2>
+<p>I created a few play repos in github to try out the nbdev environment.</p>
+<p>Nbdev is an environment used by the fastai team to create python modules (and books) as well as tests and documentation all from the Jupyter notebook!</p>
+<p>I've been looking for something like this for a long long time.  There have always been problems with the notebook environment being portrayed as a toy or only for exploration.  When you had a finished product you were suppossed to move to a proper IDE and place your code in GIT.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="What-I-did">
+<a class="anchor" href="#What-I-did" aria-hidden="true"><span class="octicon octicon-link"></span></a>What I did<a class="anchor-link" href="#What-I-did"> </a>
+</h2>
+<ol>
+<li>Log in to Github.</li>
+<li>Create your repo using the <a href="https://github.com/fastai/nbdev_template/generate">fastai template</a>. </li>
+</ol>
+<p>Now you have a github repo.  I called mine 'test2'</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Next I launched Jupyter Notebook on my laptop.  I navigated to the directory where I keep all of my python notebooks.  I keep all of my work under my 
+<strong>'work//tools//python'</strong> folder.
+I opened a terminal from my jupyter homepage.  Changed to my working directory - and cloned my 'test2' repo onto my local machine.</p>
+<ol>
+<li>Clone your repo to your local machine.<br>
+I used <code>gh repo clone &lt;github_username&gt;/Test2</code> from my terminal command line.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I could quickly see my issues and the mess of having notebooks in one folder.  There are some template notebooks, some actual work reports, some analysis, some unnamed notebooks.  It's a mess.</p>
+<p>With my new cloned repo, everything is in one nice folder.</p>
+<p>I could now navigate to the new folder from the Jupyter Notebook Web UI.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Modify <code>settings.ini</code> </li>
+</ol>
+<p>Uncomment (remove the #) and change the username, author, lib_name, copyright, keywords and so on at the top of the file. Save it.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Modify <code>00-core.ipynb</code>.</li>
+</ol>
+<p>Open and fill in appropriate names and comments.</p>
+<p>Add a few functions with documentation. Execute them - make sure they work</p>
+<p>Make sure the use the #export tag at the top of the code cell.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Modify <code>index.ipynb</code>
+</li>
+</ol>
+<p>Change the names appropriately.<br>
+Call the functions that you created in <code>00-core</code> - make sure they are working.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Run your Nbdev tools from the terminal window</li>
+</ol>
+<p>From your Jupyter Notebook terminal window run the following:</p>
+<p><code>nbdev_install_git_hooks</code> - you should only have to run this one time when your repo is cloned to your local machine.</p>
+<p><code>nbdev_build_lib</code> - builds your library as per your name in settings.ini.</p>
+<p><code>nbdev_build_docs</code> - builds your documentation</p>
+<p>and I also run a final check:</p>
+<p><code>nbdev_test_nbs</code> - tests your notebooks on your local machine.</p>
+<p>If you get any errors -read carefully - it will tell you what is amiss.
+Maybe your library didn't build and you can't call your function.  Maybe you didn't uncomment 'copyright' in the settings file.  These things will make your build fail.</p>
+<p>Next if everything passes - push it up to github.</p>
+<p>From the jupyter terminal window:</p>
+<p><code>git status</code></p>
+<p><code>git commit -a -m 'Initial mods for my library'</code></p>
+<p><code>git push</code></p>
+<p>I am prompted for my git username and git password and then my repo is updated.</p>
+<p>If I go to my github repo, I can see my changes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Next I will work on some documentation and tests.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="philescandon/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/jupyter/2020/12/29/_12_30Nbdev_Setup.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
