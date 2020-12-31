@@ -6,7 +6,7 @@
 
 https://philescandon.github.io/blog/
 
-# My Blog
+# The Learning Blog
 
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_
